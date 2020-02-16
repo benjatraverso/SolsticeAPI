@@ -12,8 +12,16 @@
 
         internal static void StoreContact(Contact item)
         {
-            item.Id = contacts.Last().Id++;
-            contacts.Add(item);
+            if (contacts.Count == 0)
+            {
+                item.Id = 1;
+                contacts.Add(item);
+            }
+            else
+            {
+                item.Id = contacts.Last().Id + 1;
+                contacts.Add(item);
+            }
         }
 
         internal static List<Contact> GetAllContacts()
