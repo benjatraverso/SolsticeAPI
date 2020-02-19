@@ -24,7 +24,7 @@
         // GET api/values/GetAllFromCity/{StateCode}
         [HttpGet]
         [AcceptVerbs("Get")]
-        [Route("api/values/GetAllFromCity/{StateCode}")]
+        [Route("api/values/GetAllFromCity/{CityCode}")]
         public string GetAllFromCity(int CityCode)
         {
             return JsonConvert.SerializeObject(Storage.GetAllFromCity(CityCode));
