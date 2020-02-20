@@ -19,7 +19,7 @@ With a body json like:
 	"CityCode":19,
 	"Street":"FelixDeAmador",
 	"AppartmentNumber":2659,
-	"AdditionalInfo":"ImmaTeaCup"
+	"AdditionalInfo":"This is some additional information"
 	}
 }
 
